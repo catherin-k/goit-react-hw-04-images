@@ -11,14 +11,14 @@ import {
 export const SearchBar = ({ onSubmitForm }) => {
   return (
     <Header>
-      <Formik initialValues={{ searchQuery: '' }} onSubmit={onSubmitForm}>
+      <Formik initialValues={{ query: '' }} onSubmit={onSubmitForm}>
         <FormBox>
           <BtnSearchForm type="submit">
             <BtnText>Search</BtnText>
           </BtnSearchForm>
 
           <Input
-            name="searchQuery"
+            name="query"
             type="text"
             autoComplete="off"
             autoFocus
